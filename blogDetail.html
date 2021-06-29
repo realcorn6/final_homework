@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>final_homework</title>
+        <link type="text/css" rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="./css/blog.css">
+        <link type="text/css" rel="stylesheet" href="./css/blogDetail.css">
+    </head>
+    <body>
+        <!-- 左侧边栏 -->
+        <div class="sideBar">
+            <!-- 个人头像，姓名 -->
+            <div class="userInfo">
+                <img src="./images/userPhoto.jpg" class="userPhoto"  alt="">
+                <span class="userName">刘钰涵</span>
+                <span class="userEmail">894179607@qq.com</span>
+            </div>
+            <!-- 导航列表 -->
+            <div class="sideBar_list">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html" target="_self">首页</a>
+                        </li>
+                        <li class="navBlog">
+                            <a href="./blog.html" target="_self">博客</a>
+                        </li>
+                        <li>
+                            <a href="./album.html" target="_self">相册</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- 右侧内容 -->
+        <div class="right_content">
+            <!-- 固定头部 -->
+            <div class="navBar">
+                <a class="return" href="./blog.html">&lt;全部博客</a>
+                <span class="titleER">E-R图与关系模式</span>
+            </div>
+            <!-- 展示博客 -->
+            <div class="blogContent">
+                <div class="firstBlog">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="blogTime">2021年6月18日</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">E-R图与关系模式</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogContent" style="width: 1000px;display: block;">用E-R图来描述现实世界的概念模型，包括实体、属性、实体之间的联系等;E-R图中：实体型用矩形表示，矩形框内写明实体名；属性用椭圆形表示，并用无向边将其与相应的实体型连接起来；联系用菱形表示，框内写明联系名，并用无向边分别与有关的实体型连接起来，同时在无向边旁标上联系的类型;注意：联系也可以具有属性；为了简化E-R图，现实世界的事物能作为属性对待的尽量作为属性对待
+                                    </span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">两个实体之间的联系</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr" style="width: 1000px;">
+                                <td>
+                                    <span class="blogContent" style="margin-left: 120px;">
+                                        一对一联系（1：1）
+                                    </span>
+                                    <span class="blogContent" style="float: right;margin-right: 120px;">
+                                        一对多联系（1：n）
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./images/onetoone.png">
+                                    <img src="./images/onetomore.png" style="float: right;">
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">数据库建立流程</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogContent">
+                                        需求分析->E-R模型->关系模型->建表
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./images/process.png" style="width: 1000px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlogTag">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="dataBaseBt">
+                                    <button>数据库</button>
+                                </td>
+                                <td class="noteBt">
+                                    <button>笔记</button>
+                                </td>
+                                <td class="studyBt">
+                                    <button>学习</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 收藏评论点赞 -->
+                <div class="commentBar">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input name="collect" value="收藏" type="button" onclick="collectBlog()"></input>
+                                </td>
+                                <td>
+                                    <input value="评论143" type="button" onclick="giveAComment()"></input>
+                                </td>
+                                <td>
+                                    <input name="like" onclick="giveALike()" type="button" value="点赞1507"></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 评论区 -->
+                <div class="comment" style="display: none;" name="comment">
+                    <form>
+                        <input type="text" placeholder="请输入您的评论……">
+                        <button type="submit">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    // 点击点赞按钮，点赞数加一
+    function giveALike(){
+        var like = document.getElementsByName("like")[0];
+        like.value = "点赞1508";
+        like.style.color = '#D85916';
+    }
+
+    // 点击收藏按钮
+    function collectBlog(){
+        var collect = document.getElementsByName("collect")[0];
+        collect.value = "已收藏";
+        collect.style.color = '#EAAD1A';
+    }
+
+    // 点击评论按钮
+    function giveAComment(){
+        var comment = document.getElementsByName("comment")[0];
+        comment.style.display = '';
+    }
+</script>

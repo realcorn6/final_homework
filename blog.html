@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>final_homework</title>
+        <link type="text/css" rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="./css/blog.css">
+    </head>
+    <body>
+        <!-- 左侧边栏 -->
+        <div class="sideBar">
+            <!-- 个人头像，姓名 -->
+            <div class="userInfo">
+                <img src="./images/userPhoto.jpg" class="userPhoto"  alt="">
+                <span class="userName">刘钰涵</span>
+                <span class="userEmail">894179607@qq.com</span>
+            </div>
+            <!-- 导航列表 -->
+            <div class="sideBar_list">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html" target="_self">首页</a>
+                        </li>
+                        <li class="navBlog">
+                            <a href="./blog.html" target="_self">博客</a>
+                        </li>
+                        <li>
+                            <a href="./album.html" target="_self">相册</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- 右侧内容 -->
+        <div class="right_content">
+            <!-- 固定头部 -->
+            <div class="navBar">
+                <span class="title">欢迎来到刘钰涵的博客</span>
+            </div>
+            <!-- 展示博客 -->
+            <div class="blogContent">
+                <div class="firstBlog">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="blogTime">2021年6月18日</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">E-R图与关系模式</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogContent">用E-R图来描述现实世界的概念模型，包括实体、属性、实体之间的联系等;E-R图中：实体型用矩形表示，矩形框内写明实体名；属性用椭圆形表示，并用无向边将其与相应的实体型连接起来；联系用菱形表示，框内写明联系名，并用无向边分别与有关的实体型连接起来，同时在无向边旁标上联系的类型;注意：联系也可以具有属性；为了简化E-R图，现实世界的事物能作为属性对待的尽量作为属性对待...
+                                    </span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="fourthTr">
+                                <td>
+                                    <a href="./blogDetail.html">阅读全文...</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlogTag">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="dataBaseBt">
+                                    <button>数据库</button>
+                                </td>
+                                <td class="noteBt">
+                                    <button>笔记</button>
+                                </td>
+                                <td class="studyBt">
+                                    <button>学习</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlog">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="blogTime">2021年5月22日</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">特里芬难题与布雷顿森林体系</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogContent">特里芬难题：是指“由于美元与黄金挂钩，而其他国家的货币与美元挂钩，美元虽然取得了国际核心货币的地位，但是各国为了发展国际贸易，必须用美元作为结算与储备货币，这样就会导致流出美国的货币在海外不断沉淀，对美国国际收支来说就会发生长期逆差；而美元作为国际货币核心的前提是必须保持美元币值稳定，这又要求美国必须是一个国际贸易收支长期顺差国。这两个要求互相矛盾，因此是一个悖论。”这一内在矛盾称为“特里芬难题(Triffin Dilemma)”。...
+                                    </span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="fourthTr">
+                                <td>
+                                    <a>阅读全文...</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlogTag">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="financeBt">
+                                    <button>货币金融</button>
+                                </td>
+                                <td class="noteBt">
+                                    <button>笔记</button>
+                                </td>
+                                <td class="studyBt">
+                                    <button>学习</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlog">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="blogTime">2021年3月20日</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogTitle">SQL SERVER 索引 | 备份与管理</span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="secondTr">
+                                <td>
+                                    <span class="blogContent">索引：有利于提高SELECT的效率，但对INSERT、DELETE、的性能不利（插入完还要更新索引）；对于SELECT查询来说，也不是建了索引就都有效，一般会在选择率小于5%时起作用；聚集索引决定排序方式，因此一张表只能有一个聚集索引，相当于目录的存在;sql server提供的备份功能，是可以在线备份的，无需脱机；提供以下多种备份方式：
+                                        数据库完整备份——（获得完整的表、视图等所有对象，也包括完整的事务日志；还原时可一次还原）（是以下所有备份方式的基础...
+                                    </span>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr class="fourthTr">
+                                <td>
+                                    <a>阅读全文...</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="firstBlogTag">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="dataBaseBt">
+                                    <button>数据库</button>
+                                </td>
+                                <td class="noteBt">
+                                    <button>笔记</button>
+                                </td>
+                                <td class="studyBt">
+                                    <button>学习</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 下方页码 -->
+                <div class="page">
+                    <span class="disabled">&lt;</span>
+                    <span class="current">1</span>
+                    <a href="./blogSecond.html" target="_self">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    ...
+                    <a href="#">199</a>
+                    <a href="#">200</a>
+                    <a href="./blogSecond.html" target="_self"> &gt;</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
